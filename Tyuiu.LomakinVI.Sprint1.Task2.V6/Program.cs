@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.LomakinVI.Sprint1.Task1.V13.Lib;
+using Tyuiu.LomakinVI.Sprint1.Task2.V6.Lib;
 
-namespace Tyuiu.LomakinVI.Sprint1.Task1.V13
+namespace Tyuiu.LomakinVI.Sprint1.Task2.V6
 {
     class Program
     {
@@ -16,32 +16,30 @@ namespace Tyuiu.LomakinVI.Sprint1.Task1.V13
             Console.Title = "Спринт #1 | Выполнил: Ломакин В. И. | ИИПб-23-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Организация ввода\\вывода в консольных приложениях                *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #13                                                             *");
+            Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #6                                                              *");
             Console.WriteLine("* Выполнил: Ломакин Владислав Игоревич | ИИПб-23-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет результат по формуле x / (0.5 * x) и печатает его на экране.  *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные  *");
+            Console.WriteLine("* равные расстоянию в метрах, переводит данное значение в километры и     *");
+            Console.WriteLine("* печатает его на экране.                                                 *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
 
-            Console.WriteLine("Введите значение X: ");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите значение Y: ");
-            y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите расстояние в метрах: ");
+            var x = int.Parse(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
-            Console.ReadLine();
+            var result = ds.ConvertMToKm(x);
+            Console.WriteLine("Расстояние в километрах = " + result);
+            Console.ReadKey();
         }
     }
 }
