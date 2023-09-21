@@ -12,8 +12,7 @@ namespace Tyuiu.LomakinVI.Sprint1.Task1.V13.Test
         {
             DataService ds = new DataService();
             double x = 1.0;
-            double y = 1.0;
-            var res = ds.Calculate(x, y);
+            var res = ds.Calculate(x);
             Assert.AreEqual(2, res);
         }
     }

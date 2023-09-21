@@ -28,19 +28,16 @@ namespace Tyuiu.LomakinVI.Sprint1.Task1.V13
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
+            double x;
 
             Console.WriteLine("Введите значение X: ");
             x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите значение Y: ");
-            y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
+            Console.WriteLine(ds.Calculate(x));
             Console.ReadLine();
         }
     }
