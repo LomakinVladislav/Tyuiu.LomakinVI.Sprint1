@@ -13,7 +13,7 @@ namespace Tyuiu.LomakinVI.Sprint1.Task7.V25.Test
         {
             DataService ds = new DataService();
 
-            double x = 1;
+            double x = 1; 
             double y = 2;
             double expection = 2.098;
             Assert.AreEqual(expection, ds.Calculate(x, y));

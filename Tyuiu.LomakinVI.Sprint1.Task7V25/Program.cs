@@ -12,7 +12,7 @@ namespace Tyuiu.LomakinVI.Sprint1.Task7V25
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService();
+            DataService ds = new DataService(); 
 
             Console.Title = "Спринт #1 | Выполнил: Ломакин В. И. | ИИПб-23-1";
             Console.WriteLine("***************************************************************************");

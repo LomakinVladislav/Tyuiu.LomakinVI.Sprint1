@@ -16,6 +16,6 @@ namespace Tyuiu.LomakinVI.Sprint1.Task7.V25.Lib
 
             double result = Math.Pow(Math.E, x) - (y * y + 6 + cosinus + x * y - 2 * x * x) / (sinus + 9 * y - 2);
             return Math.Round(result, 3);
-        }
+        } 
     }
 }
